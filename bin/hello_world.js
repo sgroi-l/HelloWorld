@@ -5,6 +5,12 @@ const { HelloWorldStack } = require('../lib/hello_world-stack');
 
 const app = new cdk.App();
 new HelloWorldStack(app, 'HelloWorldStack', {
+
+  env: {
+    account: '651460356307',
+    region: 'eu-west-2'
+  
+  }
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
