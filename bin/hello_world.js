@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const cdk = require('aws-cdk-lib');
+const cdk = require('@aws-cdk/core');
 const { HelloWorldStack } = require('../lib/hello_world-stack');
 
 const app = new cdk.App();
